@@ -1,0 +1,1 @@
+Upgraded and redesigned first portfolio made a year ago using css flexbox and mobile first design. 
