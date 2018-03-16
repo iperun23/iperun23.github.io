@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio web design">
+    <meta name="author" content="Igor">
+    <title>Igor Perun | Front End Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+
+  </head>
+
+  <body id="top">
+    <header role="main-header">
+      <h1 class="name">Igor Perun's Portfolio</h1>
+      <ul class="main-nav">
+        <li><a href="#about-section" title="About">About</a></li>
+        <li><a href="#portfolio-section" title="Portfolio">Portfolio</a></li>
+        <li><a href="#contact-section" title="Contact">Contact</a></li>
+      </ul>
+    </header> <!--/.main-header--> 
+
+
+    <!-- // navagation + banner -->
+    <main role="main">
+    <div class="banner">
+      <section id="banner-section">
+          <h1>Front-End Web Developer</h1>
+          <img class="logo" src="img/bg-img.jpg" alt="coffee-image"> 
+      </section>
+    </div> <!--/.banner-->
+
+
+
+<!-- // About-Section -->
+      <section id="about-section" class="section">
+        <div class="section-container">
+          <div class="about-wrapper">
+            <h1>Hello I'm Igor</h1>
+            <h2>Brief summary about me</h2>
+            <span id="about-divider"class="divider"></span>
+          </div>
+          <div class="about-img">
+            <div class="about-p">
+              <p>Brief paragraph about me</p>
+            </div>
+            <div class="about-image">
+              <img class="about-image" src="http://via.placeholder.com/200x150">
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- // Skills-Section -->
+      <section id="skills-section" class="section skills-img">
+        <div class="section-container">
+          <div class="section-head skills-head">
+            <h1>Skills</h1>
+            <span class="skills-divider"></span>
+            <div class="skills-container-flex">
+              <div class="flex-item dev-container">
+                <h2><span class="dev-img fa fa-gear"></span>Development</h2>
+                <span class="skills-divider"></span>
+                <ul>
+                  <li class="dev-sq">HTML5</li>
+                  <li class="dev-sq">CSS3</li>
+                  <li class="dev-sq">JavaScript</li>
+                  <li class="dev-sq">placeholder</li>
+                  <li class="dev-sq">placeholder</li>
+                </ul>
+              </div>
+                <div class="flex-item tools-container">
+                  <h2><span class="dev-img fa fa-wrench"></span>Tools</h2>
+                  <span class="skills-divider"></span>
+                  <ul>
+                    <li class="dev-sq">Chrome Dev Tools</li>
+                    <li class="dev-sq">Git + GitHub</li>
+                    <li class="dev-sq">placeholder</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+<!-- // Portfolio -->
+      <section id="portfolio-section"  class="section">
+        <div class="section-container">
+          <div class="section-head">
+            <div class="portfolio-head">
+              <a class="backto" href="#top">Back to Top<span class="dev-img2 fa fa-level-up"></span></a>
+              <h1 >Portfolio</h1>
+              <span class="divider portfolio-divider"></span>
+            </div>
+            <div class="portfolio-container">
+              <div class="project-title">
+                <h2>Project1</h2>
+                <div class="project-button">
+                  <a href="#" target="_blank">Project Link</a>
+                </div>
+                <div class="project-img">
+                  <img class="project-image" src="http://via.placeholder.com/300x300" alt="poroject-image">
+                </div>
+                <p>More information will be added after the project it completed</p>
+              </div>
+              <div class="project-title">
+                <h2>Project2</h2>
+                <div class="project-button">
+                  <a href="#" target="_blank">Project Link</a>
+                </div>
+                <div class="project-img">
+                  <img class="project-image"src="http://via.placeholder.com/300x300" alt="poroject-image">
+                </div>
+                <p>More information will be added after the project it completed</p>
+              </div>
+            </div>
+            <div class="portfolio-container">
+              <div class="project-title">
+                <h2>Project3</h2>
+                <div class="project-button">
+                  <a href="#" target="_blank">Project Link</a>
+                </div>
+                <div class="project-img">
+                  <img class="project-image" src="http://via.placeholder.com/300x300" alt="poroject-image">
+                </div>
+                <p>More information will be added after the project it completed</p>
+              </div>
+              <div class="project-title">
+                <h2>Project4</h2>
+                <div class="project-button">
+                  <a href="#" target="_blank">Project Link</a>
+                </div>
+                <div class="project-img">
+                  <img class="project-image"src="http://via.placeholder.com/300x300" alt="poroject-image">
+                </div>
+                <p>More information will be added after the project it completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<!-- // Contact-form -->
+      <section id="contact-section" class="section">
+        <div class="section-container">
+          <div class="section-head">
+          <div class="center-heading">
+            <a class="backto dev-size" href="#top">Back to Top<span class="dev-img2 fa fa-level-up"></span></a>
+            <h1>Reach out below! <span class="dev-img2 fa fa-level-down"></span></h1>
+          </div>
+          <div class="content-container">
+            <div class="form-div">
+              <form id="contact-form" method="POST" autocomplete="off" action="https://formspree.io/iperun23@gmail.com">
+                <input type="text" name="name" style="display:none">
+                <div class="form-item">
+                  <label for="name">Name
+                    <input type="text" name="name" placeholder="first and last name" required>
+                  </label required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email
+                    <input type="email" name="_replyto" required placeholder="youraddress@yourmail.com">
+                    </label>
+                </div>
+                <div class="form-item">
+                    <label for="message">Message
+                    <textarea name="message" required></textarea>
+                    </label>
+                </div>
+                <div class="sumbit-form">
+                    <input id="submit-btn" type="submit" value="Send">
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+<!-- // Footer & contact info -->
+      <footer role="contentinfo">
+        <div class="section-container">
+          <div class="social-div">
+            <ul class="social">
+              <li class="s-item"><a href="#" target="_blank" title="Email"><span class="social-img fa fa-envelope-o"></span>Email</a></li>
+              <li class="s-item"><a href="#" target="_blank" title="LinkedIn"><img class="s-img" src="img/linkedin.png" alt="linkedin"><span class="move-img">LinkedIn</span></a></li>
+              <li class="s-item"><a href="#" target="_blank" title="GitHub"><img class="s-img" src="img/github.png" alt="github"><span class="move-img">GitHub<span></a></li>
+            </ul>
+          </div>
+            <div class="footer-head">
+              <p>	&copy; Igor 2017</p>
+            </div>
+        </div>
+      </footer>
+
+    </div>
+  </main>
+  </body>
+</html>
