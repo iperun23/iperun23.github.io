@@ -4,7 +4,9 @@
   
   /* ---- Colors used:
   #00cccc - lgiht blue color
-  
+  #F5F5F5 - lgiht grey for banner
+
+
   ---- */
   
 
@@ -15,7 +17,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	color: #3a3a3a;
+	color: #000;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -40,6 +42,7 @@ a {
 img {
   max-width: 100%;
 }
+
 h1,
 h2,
 h3 {
@@ -76,11 +79,11 @@ h3 {
   }
 
   .main-nav a:hover {
-    color: #00cccc;
+    background-color: rgba(245, 245, 245, 1);
   }
 
-  /* ---- Layout Containers ---- */
-
+  /* ---- banner-section ---- */
+ 
   .banner,
   .main-footer {
     text-align: center;
@@ -89,22 +92,75 @@ h3 {
   .banner {
     color: #000;
     padding: 3.2em 0;
-    margin-bottom: 48px;
-    background-color:#F5F5F5;
+    
+  }
+ 
+.banner h1 {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+}
+
+.banner-div {
+  background-color:#F5F5F5;
+  padding-top: 15px;
+}
+
+  /* ---- about-section ---- */
+  .col {
+    padding-right: 1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
   }
 
+  .col h1,
+  .col h2,
+  .col ul,
+  .col p {
+    text-align: center;
+  }
+.col h1,
+.col h2 {
+  margin:auto;
+}
+.col h1 {
+  font-size: 2em;
+}
+.col h2 {
+  font-size: 1.15em;
+}
+ .about-head {
+   display: flex;
+   flex-wrap: wrap;
+   background: #F5F5F5;
+   margin-bottom:0;
+ }
 
+ .me-img {
+  width: 190px;
+  border-radius: 100px;
+  margin: auto;
+  padding-bottom: 1.75em;
+ } 
 
-
-
-
-  /* The image used FOR PARADOX SCROLLING!
-  background-image: url("../img/bg-img.jpg");
-   Full height 
+.skills-head {
+  background-image: url("../img/bg-par.jpg"); 
   height: 100%; 
-    Create the parallax scrolling effect 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain; 
-  */
+  background-size: contain;
+  widows: 100%; 
+  padding-right:0;
+  padding-left: 0;
+}
+.skills-head h1 {
+  background: rgba(230, 230, 230, 0.5);
+}
+.skills-head h2 {
+  background: rgba(0, 0, 0, 0.25);
+}
+.skills-head li {
+  text-shadow: 1px 1px #fff;
+  font-weight: 600;
+  background: rgba(230, 230, 230, 0.5);
+}
