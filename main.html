@@ -7,12 +7,17 @@
     <meta name="author" content="Igor">
     <title>Igor Perun | Front End Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <script src="jquery-3.3.1.min.js"></script>
+    
+  
 
   </head>
 
-  <body id="top">
+  <body>
 
      <!-- // header + navagation  -->
     <header role="main-header">
@@ -42,88 +47,67 @@
         <div class="about-main row">
           <div class="about-head col">
             <h1>Hello I'm Igor Perun</h1>
-            <h2>A self-taught web developer that likes to design and build responsive user interfaces!</h2>
+            <h2>A self-taught web developer that focuses on building responsive user interfaces and beautiful design!</h2>
             <img class="me-img" src="img/me1.jpg">
             <span id="about-divider"class="divider"></span>
-          </div> 
+          </div> <!--/.about-head col--> 
           <div class="skills-head col">
             <h1>Skills</h1>
             <span class="skills-divider"></span>
             <h2><span class="dev-img fa fa-gear"></span>Development</h2>
             <ul>
                 <li class="dev-sq">HTML5</li>
-                <li class="dev-sq">CSS3</li>
-                <li class="dev-sq">JavaScript</li>
-                <li class="dev-sq">placeholder</li>
-                <li class="dev-sq">placeholder</li>
+                <li class="dev-sq">CSS3/Sass</li>
+                <li class="dev-sq">JavaScript (ES6)</li>
+                <li class="dev-sq">Bootstrap 4</li>
+                <li class="dev-sq">JQuery</li>
+                <li class="dev-sq">AJAX/JSON/RESTful API</li>
             </ul>
             <h2><span class="dev-img fa fa-wrench"></span>Tools</h2>
             <span class="skills-divider"></span>
             <ul>
               <li class="dev-sq">Chrome Dev Tools</li>
-              <li class="dev-sq">Git + GitHub</li>
-              <li class="dev-sq">placeholder</li>
+              <li class="dev-sq">Git & GitHub</li>
+              <li class="dev-sq">Bash</li>
             </ul>
-          </div> 
-        </div> <!--/.about-row--> 
+          </div> <!--/.skills-head col--> 
+        </div> <!--/.about-main row--> 
       </section>
 
 <!-- // Portfolio -->
-      <section id="portfolio-section"  class="section">
-        <div class="section-container">
-          <div class="section-head">
-            <div class="portfolio-head">
-              <a class="backto" href="#top">Back to Top<span class="dev-img2 fa fa-level-up"></span></a>
-              <h1 >Portfolio</h1>
-              <span class="divider portfolio-divider"></span>
-            </div>
-            <div class="portfolio-container">
-              <div class="project-title">
-                <h2>Project1</h2>
-                <div class="project-button">
-                  <a href="#" target="_blank">Project Link</a>
-                </div>
-                <div class="project-img">
-                  <img class="project-image" src="http://via.placeholder.com/300x300" alt="poroject-image">
-                </div>
-                <p>More information will be added after the project it completed</p>
-              </div>
-              <div class="project-title">
-                <h2>Project2</h2>
-                <div class="project-button">
-                  <a href="#" target="_blank">Project Link</a>
-                </div>
-                <div class="project-img">
-                  <img class="project-image"src="http://via.placeholder.com/300x300" alt="poroject-image">
-                </div>
-                <p>More information will be added after the project it completed</p>
-              </div>
-            </div>
-            <div class="portfolio-container">
-              <div class="project-title">
-                <h2>Project3</h2>
-                <div class="project-button">
-                  <a href="#" target="_blank">Project Link</a>
-                </div>
-                <div class="project-img">
-                  <img class="project-image" src="http://via.placeholder.com/300x300" alt="poroject-image">
-                </div>
-                <p>More information will be added after the project it completed</p>
-              </div>
-              <div class="project-title">
-                <h2>Project4</h2>
-                <div class="project-button">
-                  <a href="#" target="_blank">Project Link</a>
-                </div>
-                <div class="project-img">
-                  <img class="project-image"src="http://via.placeholder.com/300x300" alt="poroject-image">
-                </div>
-                <p>More information will be added after the project it completed</p>
-              </div>
-            </div>
+      <section id="portfolio-section">
+        <div class="portfolio-main row">
+          <h1>Portfolio</h1>
+          <div class="project col">
+            <h2>Project 1</h2>
+            <img class="project-img" src="http://via.placeholder.com/300x300" alt="placeholder">
+            <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
+            <a class="button" href="">Link to Project</a>
           </div>
-        </div>
+          <div class="project col">
+            <h2>Project 2</h2>
+            <img class="project-img" src="http://via.placeholder.com/300x300" alt="placeholder">
+            <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
+            <a class="button" href="">Link to Project</a>
+          </div>
+          <div class="project col">
+            <h2>Project 3</h2>
+            <img class="project-img" src="http://via.placeholder.com/300x300" alt="placeholder">
+            <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
+            <a class="button" href="">Link to Project</a>
+          </div>
+          <div class="project col">
+            <h2>Project 4</h2>
+            <img class="project-img" src="http://via.placeholder.com/300x300" alt="placeholder">
+            <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
+            <a class="button" href="">Link to Project</a>
+          </div>
+
+         </div><!--/.portfolio-main row--> 
       </section>
+
+
+
 <!-- // Contact-form -->
       <section id="contact-section" class="section">
         <div class="section-container">
@@ -160,6 +144,11 @@
         </section>
 <!-- // Footer & contact info -->
       <footer role="contentinfo">
+       <a href="#" class="sf-back-to-top">
+          <i class="fa-img fas fa-arrow-up"></i>
+       </a>
+       
+        
         <div class="section-container">
           <div class="social-div">
             <ul class="social">
@@ -176,5 +165,6 @@
 
     </div>
   </main>
+  <script src="js/jQuery.js"></script>
   </body>
 </html>
