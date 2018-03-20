@@ -17,7 +17,7 @@
 body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
-	color: #000;
+	color: #2d2a2d;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,9 @@ a {
 img {
   max-width: 100%;
 }
-
+h1 {
+  text-align: center;
+}
 h1,
 h2,
 h3 {
@@ -74,7 +76,7 @@ h3 {
 
   .main-nav a {
     font-size: .95em;
-    color: #000000;
+    color: #5e5b5e;
     text-transform: uppercase;
   }
 
@@ -90,9 +92,9 @@ h3 {
   }
 
   .banner {
-    color: #000;
-    padding: 3.2em 0;
-    
+    color: #2d2a2d;
+    padding-top:1.75em;
+    padding-bottom:0;
   }
  
 .banner h1 {
@@ -126,7 +128,7 @@ h3 {
   font-size: 2em;
 }
 .col h2 {
-  font-size: 1.15em;
+  font-size: 1em;
 }
  .about-head {
    display: flex;
@@ -139,7 +141,8 @@ h3 {
   width: 190px;
   border-radius: 100px;
   margin: auto;
-  padding-bottom: 1.75em;
+  padding-bottom: 2.75em;
+  padding-top: 1em;
  } 
 
 .skills-head {
@@ -158,9 +161,69 @@ h3 {
 }
 .skills-head h2 {
   background: rgba(0, 0, 0, 0.25);
+  color: #2d2a2d;
 }
 .skills-head li {
   text-shadow: 1px 1px #fff;
   font-weight: 600;
   background: rgba(230, 230, 230, 0.5);
+  font-size: .85em;
+  color:#2d2a2d;
+  padding: 3px 3px;;
+}
+
+
+ /* ---- portfolio-section ---- */
+
+.button {
+	color: #fff;
+	text-align: center;
+	padding: .525em 1em;
+	background: #5e5b5e;
+  border-radius: .35em;  
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.5em;
+}
+.project-img,
+.button {
+  margin: auto;
+}
+
+.portfolio-main {
+  background-color: #f4f4f4;
+}
+
+
+ /* ---- scroll-top button ---- */
+
+
+.sf-back-to-top {
+  background: none;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  z-index: 100;
+  display: none;
+  text-decoration: none;
+  color: #f4f4f4;
+  background-color: #2d2a2d;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 20%;
+}
+
+.sf-back-to-top i {
+  font-size: 30px;
+}
+.sf-back-to-top:hover {
+  background-color:rgba(0, 0, 0, 0.05);
+  border: 1.5px outset #2d2a2d;
+}
+.fa-img:hover {
+  color: #2d2a2d;
 }
