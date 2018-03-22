@@ -62,10 +62,12 @@
                 <li class="dev-sq">Bootstrap 4</li>
                 <li class="dev-sq">JQuery</li>
                 <li class="dev-sq">AJAX/JSON/RESTful API</li>
+                <li class="dev-sq">Node.js & NPM</li>
             </ul>
             <h2><span class="dev-img fa fa-wrench"></span>Tools</h2>
             <span class="skills-divider"></span>
             <ul>
+              <li class="dev-sq">Adobe Software</li>
               <li class="dev-sq">Chrome Dev Tools</li>
               <li class="dev-sq">Git & GitHub</li>
               <li class="dev-sq">Bash</li>
@@ -109,39 +111,36 @@
 
 
 <!-- // Contact-form -->
-      <section id="contact-section" class="section">
-        <div class="section-container">
-          <div class="section-head">
-          <div class="center-heading">
-            <a class="backto dev-size" href="#top">Back to Top<span class="dev-img2 fa fa-level-up"></span></a>
-            <h1>Reach out below! <span class="dev-img2 fa fa-level-down"></span></h1>
-          </div>
-          <div class="content-container">
-            <div class="form-div">
-              <form id="contact-form" method="POST" autocomplete="off" action="https://formspree.io/iperun23@gmail.com">
-                <input type="text" name="name" style="display:none">
-                <div class="form-item">
-                  <label for="name">Name
-                    <input type="text" name="name" placeholder="first and last name" required>
+      <section id="contact-section">
+        <div class="contact-main row">
+          <h1>Reach out below!</h1>
+          <div class="form-info col">
+            <form id="contact-form" method="POST" autocomplete="off" action="https://formspree.io/iperun23@gmail.com">
+              <ul class="flex-outer">
+                <li>
+                  <label for="name">Name:
+                    <input  type="text" name="name" placeholder="First and Last Name" required>
                   </label required>
-                </div>
-                <div class="form-item">
-                    <label for="email">Email
+                </li>
+                <li>
+                  <label for="email">Email:
                     <input type="email" name="_replyto" required placeholder="youraddress@yourmail.com">
-                    </label>
-                </div>
-                <div class="form-item">
-                    <label for="message">Message
+                  </label>
+                </li>
+                <li>
+                  <label for="message">Message:
                     <textarea name="message" required></textarea>
-                    </label>
-                </div>
-                <div class="sumbit-form">
-                    <input id="submit-btn" type="submit" value="Send">
-                </div>
-              </form>
-            </div>
+                  </label>
+                </li>
+                <li>
+                  <button class='button' type="submit" value="Send">Submit</button>
+                </li>
+              </ul>
+            </form>
           </div>
-        </section>
+        </div><!--/.contact-main row-->
+      </section>
+
 <!-- // Footer & contact info -->
       <footer role="contentinfo">
        <a href="#" class="sf-back-to-top">
