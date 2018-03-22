@@ -3,14 +3,14 @@
   =================== */
   
   /* ---- Colors used:
-  #00cccc - lgiht blue color
-  #F5F5F5 - lgiht grey for banner
+  #F5F5F5 - light grey for banner
 
 
   ---- */
   
 
-* {
+*,
+.form-info * {
 	box-sizing: border-box;
 }
 
@@ -155,6 +155,9 @@ h3 {
   widows: 100%; 
   padding-right:0;
   padding-left: 0;
+  margin-bottom: 0;
+  border-top: 3px solid #2d2a2d;
+  border-bottom: 3px solid #2d2a2d;
 }
 .skills-head h1 {
   background: rgba(230, 230, 230, 0.5);
@@ -174,13 +177,27 @@ h3 {
 
 
  /* ---- portfolio-section ---- */
-
+.portfolio-main h1 {
+  padding-top: .5em;
+  font-size: 2em;
+}
 .button {
 	color: #fff;
 	text-align: center;
 	padding: .525em 1em;
 	background: #5e5b5e;
-  border-radius: .35em;  
+  border-radius: .35em; 
+  transition-property: background, border-radius, color;  
+  transition-duration: .4s; 
+}
+.button:hover {
+  color:#fff;
+  background: #2d2a2d;
+  border-radius: .75em;
+  
+}
+.button:active {
+  background: #5e5b5e;
 }
 .project {
   display: flex;
@@ -215,15 +232,117 @@ h3 {
   text-align: center;
   padding-top: 5px;
   border-radius: 20%;
+  transition-duration: .4s;
 }
 
 .sf-back-to-top i {
   font-size: 30px;
 }
+
 .sf-back-to-top:hover {
   background-color:rgba(0, 0, 0, 0.05);
   border: 1.5px outset #2d2a2d;
+  box-shadow: inset -75px -75px 400px #fff;
+
 }
 .fa-img:hover {
   color: #2d2a2d;
 }
+
+.fa-arrow-up:before {
+  content: "\f062";
+  padding: 5px;
+}
+
+
+/* ---- form-section ---- */
+
+.form-info {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background:#cecece;
+  color:#2d2a2d;
+}
+.flex-outer {
+  list-style-type: none;
+  padding: 0;
+}
+.flex-outer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.flex-outer li label,
+.flex-outer li p {
+  padding: 8px;
+  font-weight: 300;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1 0 120px;
+  max-width: 220px;
+  margin:auto;
+}
+
+.flex-outer > li > label + * {
+  flex: 1 0 220px;
+}
+
+.flex-outer li p {
+  margin: 0;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea {
+  padding: 15px;
+  border: none;
+}
+
+.flex-outer li button {
+  padding: 8px 16px;
+  border: none;
+  background: #2d2a2d;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.flex-inner li {
+  width: 100px;
+}
+
+.form-info input {
+  width: 11.250 em;
+  height: 1.875 em;
+}
+
+.form-info textarea {
+  width: 215px;
+  height: 100px;
+} 
+
+.form-info {
+  border: 1.5px outset #2d2a2d;
+}
+
+/* ---- footer-section ---- */
+
+
