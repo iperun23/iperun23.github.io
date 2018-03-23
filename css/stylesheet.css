@@ -161,6 +161,8 @@ h3 {
 }
 .skills-head h1 {
   background: rgba(230, 230, 230, 0.5);
+  color:black;
+  
 }
 .skills-head h2 {
   background: rgba(0, 0, 0, 0.25);
@@ -171,7 +173,7 @@ h3 {
   font-weight: 600;
   background: rgba(230, 230, 230, 0.5);
   font-size: .85em;
-  color:#2d2a2d;
+  color:black;
   padding: 3px 3px;;
 }
 
@@ -345,4 +347,63 @@ h3 {
 
 /* ---- footer-section ---- */
 
+.main-footer{
+  background: #f4f4f4;
+  padding: 10px;
+  margin-top: 25px;
+}
 
+.footer-head p {
+  margin:0;
+  padding: 10px;
+  border-top: 1.5px outset #2d2a2d;
+}
+.social-flex {
+  display:flex;
+  margin: 15px;
+}
+
+.social-flex li {
+  -moz-box-shadow:    inset 0 0 10px #5e5b5e;
+  -webkit-box-shadow: inset 0 0 10px #5e5b5e;
+  box-shadow:         inset 0 0 10px #5e5b5e; 
+  border-radius: .75em;
+  flex-grow:1;
+  background: #5e5b5e;
+  border: 1px solid #2d2a2d;
+  display:flex;
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+}
+.social-flex a {
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1em;
+}
+.social-flex li:hover {
+  color:#fff;
+  background: #2d2a2d;
+  border-radius: .75em;
+}
+.social-flex li:active {
+  background: #5e5b5e;
+}
+
+.social-flex p {
+  display:flex;
+  justify-content: center;
+  padding:10px 10px 1px 10px;
+  margin:0;
+}
+
+.i-img {
+  font-size: 20px;
+  margin: 1px 2px;
+}
+.s-img {
+ margin-right: 2px;
+ margin-bottom: 5px;
+ height: 25px;
+}
