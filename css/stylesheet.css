@@ -1,14 +1,12 @@
-/* ==================
-  Base Element Styles
-  =================== */
-  
+/* ---- Base Element Styles ----*/
+
   /* ---- Colors used:
-  #F5F5F5 - light grey for banner
-
-
+  #000; -- black
+  #2d2a2d -dark grey
+  #5e5b5e -light grey
+  #fff -white
   ---- */
   
-
 *,
 .form-info * {
 	box-sizing: border-box;
@@ -51,9 +49,7 @@ h3 {
 	margin-top: 0;
 }
 
-/* ==================
-  Base layout Styles
-  =================== */
+/* ---- Base layout Styles ----*/
 
 
   /* ---- Navigation ---- */
@@ -81,11 +77,14 @@ h3 {
   }
 
   .main-nav a:hover {
-    background-color: rgba(245, 245, 245, 1);
+    background-color: #000;
+    color:#fff;
   }
 
   /* ---- banner-section ---- */
- 
+  #banner-section {
+    margin:0;
+  }
   .banner,
   .main-footer {
     text-align: center;
@@ -93,18 +92,18 @@ h3 {
 
   .banner {
     color: #2d2a2d;
-    padding-top:1.75em;
-    padding-bottom:0;
+    margin: 0;
   }
- 
+
 .banner h1 {
   font-size: 1.75em;
-  margin-bottom: 10px;
+  background-color: #F5F5F5;
+  padding: 10px 0;
+  margin:0;
+  border-bottom: 2px solid #000;
 }
-
-.banner-div {
-  background-color:#F5F5F5;
-  padding-top: 15px;
+.logo {
+  margin-bottom: -10px;
 }
 
   /* ---- about-section ---- */
@@ -134,9 +133,11 @@ h3 {
    display: flex;
    flex-wrap: wrap;
    background: #F5F5F5;
-   margin-bottom:0;
+   margin:0;
  }
-
+.about-head h1 {
+  padding: 15px 0;
+}
  .me-img {
   width: 190px;
   border-radius: 100px;
@@ -160,24 +161,28 @@ h3 {
   border-bottom: 3px solid #2d2a2d;
 }
 .skills-head h1 {
-  background: rgba(230, 230, 230, 0.5);
-  color:black;
+  background: rgba(230, 230, 230, 0.70);
+  color:#000;
+  padding: 5px 0;
   
 }
 .skills-head h2 {
-  background: rgba(0, 0, 0, 0.25);
-  color: #2d2a2d;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 1.10em;
 }
 .skills-head li {
   text-shadow: 1px 1px #fff;
   font-weight: 600;
   background: rgba(230, 230, 230, 0.5);
   font-size: .85em;
-  color:black;
+  color:#000;
   padding: 3px 3px;;
 }
 
-
+.dev-img {
+  padding-right: 5px;
+}
  /* ---- portfolio-section ---- */
 .portfolio-main h1 {
   padding-top: .5em;
@@ -194,7 +199,7 @@ h3 {
 }
 .button:hover {
   color:#fff;
-  background: #2d2a2d;
+  background: #000;
   border-radius: .75em;
   
 }
@@ -205,6 +210,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.5em;
+  flex-direction: column;
 }
 .project-img,
 .button {
@@ -243,12 +249,12 @@ h3 {
 
 .sf-back-to-top:hover {
   background-color:rgba(0, 0, 0, 0.05);
-  border: 1.5px outset #2d2a2d;
+  border: 1.5px outset #000;
   box-shadow: inset -75px -75px 400px #fff;
 
 }
 .fa-img:hover {
-  color: #2d2a2d;
+  color: #000;
 }
 
 .fa-arrow-up:before {
@@ -384,7 +390,7 @@ h3 {
 }
 .social-flex li:hover {
   color:#fff;
-  background: #2d2a2d;
+  background: #000;
   border-radius: .75em;
 }
 .social-flex li:active {
@@ -406,4 +412,37 @@ h3 {
  margin-right: 2px;
  margin-bottom: 5px;
  height: 25px;
+}
+
+
+/* ---- MEDIA QUERIES ---- */
+
+@media screen and (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .name {
+    display:flex;
+   }
+  .main-nav {
+    margin-left :auto;
+  }
+  .name {
+    padding: 30px;
+    font-size: 1.75em;
+  }
+  .main-nav li {
+    padding: 25px 15px 10px 10px;
+  
+  }
+  .project-wrap {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  
 }
