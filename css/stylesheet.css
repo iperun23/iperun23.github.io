@@ -146,20 +146,6 @@ h3 {
   padding-top: 1em;
  } 
 
-.skills-head {
-  background-image: url("../img/bg-par.jpg"); 
-  height: 100%; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  widows: 100%; 
-  padding-right:0;
-  padding-left: 0;
-  margin-bottom: 0;
-  border-top: 3px solid #2d2a2d;
-  border-bottom: 3px solid #2d2a2d;
-}
 .skills-head h1 {
   background: rgba(230, 230, 230, 0.70);
   color:#000;
@@ -417,6 +403,23 @@ h3 {
 
 /* ---- MEDIA QUERIES ---- */
 
+@media screen and (min-width: 300px) {
+.skills-head {
+  background-image: url("../img/bg-par.jpg"); 
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  widows: 100%; 
+  padding-right:0;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-top: 3px solid #2d2a2d;
+  border-bottom: 3px solid #2d2a2d;
+  }
+}
+
 @media screen and (min-width: 769px) {
   .main-header,
   .main-nav,
@@ -443,6 +446,14 @@ h3 {
 
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1000px) {
+  .logo {
+    max-height: 1000px;
+    width: 100%;
+  }
+  .about-head {
+    display: flex;
+    flex-direction: column;
+  }
   
 }
