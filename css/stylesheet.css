@@ -101,9 +101,11 @@ h3 {
   padding: 10px 0;
   margin:0;
   border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
 }
 .logo {
   margin-bottom: -10px;
+  border-bottom: 2px solid #000;
 }
 
   /* ---- about-section ---- */
