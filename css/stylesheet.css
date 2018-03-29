@@ -269,6 +269,10 @@ h3 {
 
 /* ---- form-section ---- */
 
+.contact-main h1 {
+  margin-top: 25px;
+}
+
 .form-info {
   width: 80%;
   max-width: 1200px;
