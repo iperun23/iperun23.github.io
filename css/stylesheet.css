@@ -58,7 +58,9 @@ h3 {
     font-size: 1.35em;
     margin: 0;
   }
-
+  .main-header {
+    background-image: linear-gradient(to bottom, #ffffff, #fcfcfc, #fafafa, #f7f7f7, #f5f5f5);
+  }
   .main-nav {
     margin-top: 5px;
   }
@@ -134,7 +136,7 @@ h3 {
  .about-head {
    display: flex;
    flex-wrap: wrap;
-   background: #F5F5F5;
+   background-image: linear-gradient(to bottom, #ffffff, #fcfcfc, #fafafa, #f7f7f7, #f5f5f5);
    margin:0;
  }
 .about-head h1 {
@@ -147,6 +149,21 @@ h3 {
   padding-bottom: 2.75em;
   padding-top: 1em;
  } 
+
+
+ .skills-head {
+  background-color: #fff; 
+  background-image: 
+  linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+  linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  width: 100%; 
+  padding-right:0;
+  padding-left: 0;
+  margin-bottom: 0;
+  border-top: 3px solid #2d2a2d;
+  border-bottom: 3px solid #2d2a2d;
+  }
 
 .skills-head h1 {
   background: rgba(230, 230, 230, 0.60);
@@ -268,6 +285,9 @@ h3 {
 
 
 /* ---- form-section ---- */
+.contact-main {
+  background-image: linear-gradient(to bottom, #ffffff, #fcfcfc, #fafafa, #f7f7f7, #f5f5f5);
+}
 
 .contact-main h1 {
   margin-top: 25px;
@@ -277,8 +297,17 @@ h3 {
   width: 80%;
   max-width: 1200px;
   margin: 0 auto;
-  background:#cecece;
-  color:#2d2a2d;
+  color:#fff;
+  border: 1.5px outset #2d2a2d;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
 }
 .flex-outer {
   list-style-type: none;
@@ -332,7 +361,7 @@ h3 {
 
 .flex-outer li button {
   padding: 8px 16px;
-  border: none;
+  border: 1px solid #fff;
   background: #2d2a2d;
   color: #f2f2f2;
   text-transform: uppercase;
@@ -355,16 +384,12 @@ h3 {
   height: 100px;
 } 
 
-.form-info {
-  border: 1.5px outset #2d2a2d;
-}
-
 /* ---- footer-section ---- */
 
 .main-footer{
   background: #f4f4f4;
   padding: 10px;
-  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .footer-head p {
@@ -425,7 +450,7 @@ h3 {
 
 /* ---- MEDIA QUERIES ---- */
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 769px) {
 .skills-head {
   background-image: url("../img/bg-par.jpg"); 
   height: 100%; 
@@ -483,3 +508,4 @@ h3 {
   }
   
 }
+
