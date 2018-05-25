@@ -1,5 +1,7 @@
 var amountScrolled = 200;
 
+new WOW().init();
+
 $(window).scroll(function() {
     if ( $(window).scrollTop() > amountScrolled ) {
         $('a.sf-back-to-top').fadeIn('slow');
