@@ -131,7 +131,7 @@ h3 {
   font-size: 2em;
 }
 .col h2 {
-  font-size: 1em;
+  font-size: 1.5em;
 }
  .about-head {
    display: flex;
@@ -141,6 +141,7 @@ h3 {
  }
 .about-head h1 {
   padding: 15px 0;
+  font-weighT: 750;
 }
  .me-img {
   width: 190px;
