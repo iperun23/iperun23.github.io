@@ -6,12 +6,16 @@
     <meta name="description" content="portfolio web design">
     <meta name="author" content="Igor">
     <title>Igor Perun | Front End Web Developer</title>
+    <!-- Animate.css CSS file -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css" >
+    <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    <!-- Custom CSS sheet -->
     <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
-    <script src="jquery-3.3.1.min.js"></script>
+   
     
   </head>
 
@@ -19,8 +23,8 @@
 
      <!-- // header + navagation  -->
     <header role="main-header" class="main-header">
-      <h1 class="name">Igor Perun's Portfolio</h1>
-      <ul class="main-nav">
+      <h1 class="name animated bounceInDown">Igor Perun's Portfolio</h1>
+      <ul class="main-nav animated bounceInDown">
         <li><a href="#about-section" title="About">About</a></li>
         <li><a href="#portfolio-section" title="Portfolio">Portfolio</a></li>
         <li><a href="#contact-section" title="Contact">Contact</a></li>
@@ -42,9 +46,9 @@
       <section id="about-section">
         <div class="about-main row">
           <div class="about-head col">
-            <h1>Hello I'm Igor Perun</h1>
-            <h2>A self-taught web developer that focuses on building responsive user interfaces and beautiful design!</h2>
-            <img class="me-img" src="img/me1.jpg">
+            <h1 class="  wow zoomIn" data-wow-duration="1s" data-wow-delay=".5s">Hello I'm Igor Perun</h1>
+            <h2 class="  wow zoomIn" data-wow-duration="1s" data-wow-delay=".5s">A self-taught web developer that focuses on building responsive user interfaces and beautiful design!</h2>
+            <img class="me-img   wow zoomIn" data-wow-duration="1s" data-wow-delay=".5s" src="img/me1.jpg">
             <span id="about-divider"class="divider"></span>
           </div> <!--/.about-head col--> 
           <div class="skills-head col">
@@ -78,13 +82,13 @@
         <div class="portfolio-main row">
           <h1>Portfolio</h1>
           <div class="project-wrap">
-            <div class="project col">
+            <div class="project col wow bounceInLeft" data-wow-duration=".6s" data-wow-delay=".5s">
              <h2>Project 1</h2>
              <img class="project-img" src="https://via.placeholder.com/300x300" alt="placeholder">
               <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
               <a class="button project-button" href="">Link to Project</a>
             </div>
-            <div class="project col">
+            <div class="project col wow bounceInRight" data-wow-duration=".7s" data-wow-delay=".7s">
               <h2>Project 2</h2>
               <img class="project-img" src="https://via.placeholder.com/300x300" alt="placeholder">
               <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
@@ -92,14 +96,26 @@
             </div>
           </div>
           <div class="project-wrap">
-            <div class="project col">
+            <div class="project col wow bounceInLeft" data-wow-duration=".6s" data-wow-delay=".5s">
               <h2>Project 3</h2>
               <img class="project-img" src="https://via.placeholder.com/300x300" alt="placeholder">
               <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
               <a class="button project-button" href="">Link to Project</a>
             </div>
-            <div class="project col">
+            <div class="project col wow bounceInRight" data-wow-duration=".7s" data-wow-delay=".7s">
               <h2>Project 4</h2>
+              <img class="project-img" src="https://via.placeholder.com/300x300" alt="placeholder">
+              <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
+              <a class="button project-button" href="">Link to Project</a>
+            </div>
+            <div class="project col wow bounceInLeft" data-wow-duration=".6s" data-wow-delay=".5s">
+              <h2>Project 5</h2>
+              <img class="project-img" src="https://via.placeholder.com/300x300" alt="placeholder">
+              <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
+              <a class="button project-button" href="">Link to Project</a>
+            </div>
+            <div class="project col wow bounceInRight" data-wow-duration=".7s" data-wow-delay=".7s">
+              <h2>Project 6</h2>
               <img class="project-img" src="https://via.placeholder.com/300x300" alt="placeholder">
               <p>Sit amet justo donec enim diam vulputate ut. Nibh mauris cursus mattis molestie a iaculis at.</p>
               <a class="button project-button" href="">Link to Project</a>
@@ -172,6 +188,11 @@
       </footer>
         
     </main>
-  <script src="js/jQuery.js"></script>
+    <!-- JQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- WOW JS -->
+    <script src="js/wow.min.js" type="text/javascript"></script>
+     <!-- Custom JQuery -->
+    <script src="js/jQuery.js"></script>
   </body>
 </html>
