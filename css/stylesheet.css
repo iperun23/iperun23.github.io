@@ -243,7 +243,9 @@ h3 {
 .button {
   margin: auto;
 }
-
+.pw2 {
+  padding-bottom: 2em;
+}
 .portfolio-main {
   background-color: #f4f4f4;
 }
@@ -489,7 +491,9 @@ h3 {
   margin-left: 15px;
   padding:0;
   }
-
+  .project-bm {
+    margin-bottom: 15px;
+  }
   .skills-head {
     background-image: url("../img/bg-par.jpg"); 
     height: 100%; 
