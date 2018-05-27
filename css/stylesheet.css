@@ -137,7 +137,7 @@ h3 {
    display: flex;
    flex-wrap: wrap;
    margin:0;
-   background: radial-gradient(grey, white);
+   background: radial-gradient(#bdbdbd, white);
 } 
 
 .about-head h1 {
@@ -162,7 +162,7 @@ h3 {
   width: 100%; 
   padding-right:0;
   padding-left: 0;
-  margin-bottom: 0;
+  padding-bottom: 0;
   border-top: 3px solid #2d2a2d;
   border-bottom: 3px solid #2d2a2d;
   }
@@ -235,6 +235,9 @@ h3 {
    color: #2d2a2d;
    border-radius: 10px;
    margin-bottom: 1em;
+}
+.project-bm {
+  margin-bottom: 0;
 }
 .project-img,
 .button {
@@ -497,7 +500,7 @@ h3 {
     width: 100%; 
     padding-right:0;
     padding-left: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
     border-top: 3px solid #2d2a2d;
     border-bottom: 3px solid #2d2a2d;
     }
