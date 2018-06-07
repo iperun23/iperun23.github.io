@@ -17,6 +17,18 @@ $('a.sf-back-to-top').click(function() {
     return false;
 });
 
+// remove jquery project animations @ 769 size
+
+$(window).bind("resize", function () {
+  if($(this).width() < 769) {
+    $('div').removeClass('bounceInLeft');
+    $('div').removeClass('bounceInRight');
+    $('div').removeClass('wow');
+    $('div').removeClass('animated');
+  }
+}).trigger('resize');
+
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
