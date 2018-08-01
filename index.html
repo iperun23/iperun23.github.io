@@ -42,9 +42,32 @@
           <img class="logo" src="img/bg-img2.jpg" alt="coffee-image"> 
         </div>
      </div> <!--/.banner-->
-
     </section>
- 
+
+    <!-- //  in front of banner-section -->
+    <section id="front-banner">
+      <div class="banner-wrapper">
+        <div class="banner-hello">
+          <h1>hello.</h1>
+        </div>
+        <div class="banner-name">
+          <h2>I'm <span id="ig">Igor</span> Perun</h2>
+        </div>
+        <div class="social-banner">
+            <a href="https://github.com/iperun23" class="" target="_blank" title="GitHub">
+              <img class="s-img" src="img/github.png" alt="github">
+            </a>
+            <a href="mailto:iperun23@gmail.com" class="" target="_blank" title="Email">
+                <i class="i-img fas fa-envelope"></i>
+              </a>
+         </div>
+        <div class="banner-text">
+          <h3>
+          a design oriented front-end developer.
+          </h3>
+        </div>
+      </div>
+    </section>
 
 <!-- // about-Section -->
 <section id="about-section">
@@ -111,13 +134,21 @@
         </div>
         <div class="project-wrap">
           <div class="project-pic col">
-            <img class="project-img" src="img/smart.png" alt="smartbrain project" height="300" width="550">
+            <img class="project-img" src="img/smart.jpg" alt="smartbrain project" height="300" width="550">
           </div>
           <div class="project-text col">
             <h2>Smartbrain</h2>
             <span class="grey-divider"></span>
             <p><i>Smartbrain: </i> a face recognition react application that targets and highlights a face in a picture using the Clarifai API. It gives anyone the abilty to register as a new user and login anytime. Also tracks the service usage each time. (Stored into a database)</p>
             <p><span class="bt-span">Build Tools: </span>React, Node.JS, PostgreSQL, Ubuntu/Heroku, HTML/CSS, JS(ES6), JSON/API </p>
+            <div class="demo-buttons">
+                <div class="demo-button">
+                    <a href="https://iperun23.github.io/smartbrain/" target="_blank" >View Live Demo</a>
+                </div>
+                <div class="demo-button">
+                    <a href="https://github.com/iperun23/smartbrain" target="_blank" >View on Github</a>
+                </div>
+              </div>
           </div>
         </div>
         <div class="project-wrap">
@@ -126,20 +157,36 @@
             <span class="grey-divider"></span>
             <p><i>FitLit-Life: </i>A single page website built from scratch using the new Bootstrap 4 that showcases new food reviews, fitness goals and foods. Visually stunning visitors with two different designs, one on the desktop and the other on mobile view for a great expereince. Using the website to try out some of the new Bootstrap 4 awesome features. </p>
             <p><span class="bt-span">Build Tools: </span>HTML5, Custom CSS3, BootStrap 4, JQuery, Javascript </p>
+            <div class="demo-buttons">
+                <div class="demo-button">
+                    <a href="https://iperun23.github.io/fitness-products/" target="_blank" >View Live Demo</a>
+                </div>
+                <div class="demo-button">
+                    <a href="https://github.com/iperun23/fitness-products" target="_blank" >View on Github</a>
+                </div>
+              </div>
           </div>
           <div class="project-pic-r col">
-            <img class="project-img" src="img/fitness.png" alt="fitness project" height="300" width="550">
+            <img class="project-img" src="img/fitness.jpg" alt="fitness project" height="300" width="550">
           </div>
         </div>
         <div class="project-wrap">
           <div class="project-pic col">
-            <img class="project-img" src="img/robo.png" alt="robofriends" height="300" width="550">
+            <img class="project-img" src="img/robo.jpg" alt="robofriends" height="300" width="550">
           </div>
           <div class="project-text col">
             <h2>Robofriends</h2>
             <span class="grey-divider"></span>
             <p><i>Robofriends: </i>a fun robot name search using the RoboHash API that will display the full robot card when searched for a specific name. *Working with React components and state management with Redux</p>
             <p><span class="bt-span">Build Tools: </span>React, Redux, NPM, HTML5, CSS3, API</p>
+            <div class="demo-buttons">
+                <div class="demo-button">
+                    <a href="https://iperun23.github.io/robofriends/" target="_blank" >View Live Demo</a>
+                </div>
+                <div class="demo-button">
+                    <a href="https://github.com/iperun23/robofriends" target="_blank" >View on Github</a>
+                </div>
+              </div>
           </div>
           <div class="project-wrap pw-bpad">
             <div class="project-text-r col">
@@ -147,9 +194,17 @@
               <span class="grey-divider"></span>
               <p><i>Fit-Up: </i>a single page start up landing page for a fitness company using a marketing platform: MailChip for email subscriptions</p>
               <p><span class="bt-span">Build Tools: </span>HTML5, BootStrap 4, CSS, MailChimp</p>
+              <div class="demo-buttons">
+                  <div class="demo-button">
+                      <a href="https://iperun23.github.io/fitness-startup/" target="_blank" >View Live Demo</a>
+                  </div>
+                  <div class="demo-button">
+                      <a href="https://github.com/iperun23/fitness-startup" target="_blank" >View on Github</a>
+                  </div>
+                </div>
             </div>
             <div class="project-pic-r col">
-              <img class="project-img" src="img/startup.png" alt="startup" height="300" width="550">
+              <img class="project-img" src="img/startup.jpg" alt="startup" height="300" width="550">
             </div>
           </div>
         </div>
@@ -157,31 +212,51 @@
 
 <!-- // Contact-form -->
       <section id="contact-section">
-        <div class="contact-main row">
+        <div class="contact-main">
           <h1>Reach out below!</h1>
-          <div class="form-info col">
-            <form id="contact-form" method="POST" autocomplete="off" action="https://formspree.io/iperun23@gmail.com">
-              <ul class="flex-outer">
-                <li>
-                  <label for="name">Name:
-                    <input  type="text" name="name" placeholder="First and Last Name" required>
-                  </label required>
-                </li>
-                <li>
-                  <label for="email">Email:
-                    <input type="email" name="_replyto" required placeholder="youraddress@yourmail.com">
-                  </label>
-                </li>
-                <li>
-                  <label for="message">Message:
-                    <textarea name="message" required></textarea>
-                  </label>
-                </li>
-                <li>
-                  <button class='button' type="submit" value="Send">Submit</button>
-                </li>
-              </ul>
-            </form>
+          <span class="grey-divider"></span>
+          <div class="contact-main-wrapper">
+            <div class="contact-wrapper">
+              <h1>Contact Links</h1>
+              <div class="contact-git">
+                  <a href="https://github.com/iperun23"  target="_blank" title="GitHub">
+                    <img class="contact-g-img" src="img/github2.png" alt="github">
+                  </a>
+              </div>
+              <div class="contact-email">
+                  <a href="mailto:iperun23@gmail.com"   title="Email">
+                      <img class="contact-e-img" src="img/email.png" alt="github">
+                    </a>
+              </div>
+            </div>
+            
+            <div class="form-info">
+              <div class="form-wrapper">
+                  <h3>Send a Message!</h3>
+                  <span class="grey-divider"></span>
+              <form id="contact-form" method="POST" autocomplete="off" action="https://formspree.io/iperun23@gmail.com">
+                <ul class="flex-outer">
+                  <li>
+                    <label for="first-name">First Name:</label required>
+                      <input type="text" id="first-name" placeholder="Enter your First name here">
+                    </li>
+                  </li>
+                  <li>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="_replyto" placeholder="youraddress@yourmail.com">
+                  </li>
+                  <li>
+                      <label for="message">Message:</label>
+                      <textarea rows="6" id="message" placeholder="Enter your message here" name="message" required></textarea>
+                  </li>
+                  <li>
+                    <button class='button' type="submit" value="Send">Submit</button>
+                  </li>
+                </ul>
+              </form>
+              </div>
+              
+            </div>
           </div>
         </div><!--/.contact-main row-->
       </section>
@@ -193,25 +268,6 @@
        </a>
 
           <div class="main-footer">
-            <div class="social-div">
-              <ul class="social-flex">
-                <li>
-                  <a href="mailto:iperun23@gmail.com" class="" target="_blank" title="Email">
-                    <p class="img-center"><i class="i-img fas fa-envelope"></i>Email</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="" target="_blank" title="LinkedIn">
-                    <p class="img-center"><img class="s-img" src="img/linkedin.png" alt="linkedin">LinkedIn</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/iperun23" class="" target="_blank" title="GitHub">
-                    <p class="img-center"><img class="s-img" src="img/github.png" alt="github">GitHub</p>  
-                  </a>
-                </li>
-              </ul>
-            </div>
             <div class="footer-head">
               <p>	&copy; Igor Perun 2018 </p>
             </div>
