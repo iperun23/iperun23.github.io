@@ -6,6 +6,8 @@
     <meta name="description" content="portfolio web design">
     <meta name="author" content="Igor">
     <title>Igor Perun | Front End Web Developer</title>
+     <!-- Google font file -->
+     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Animate.css CSS file -->
     <link rel="stylesheet" href="css/animate.min.css" type="text/css" >
     <!-- Font Awesome CDN -->
@@ -14,7 +16,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <!-- Custom CSS sheet -->
-    <link rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
    
     
   </head>
@@ -23,11 +25,12 @@
 
      <!-- // header + navagation  -->
     <header role="main-header" class="main-header">
-      <h1 class="name animated zoomInDown">Igor Perun's Portfolio</h1>
+      <img class="name animated zoomInDown" src="img/brand.png" alt="brand-logo" height="90" width="90">
       <ul class="main-nav animated zoomInDown">
         <li><a href="#about-section" title="About">About</a></li>
         <li><a href="#portfolio-section" title="Portfolio">Portfolio</a></li>
         <li><a href="#contact-section" title="Contact">Contact</a></li>
+        <li id="download"><a class="btn btn-default"><span class="dev-img fas fa-download"></span>Resume</a></li>
       </ul>
     </header> <!--/.main-header--> 
 
@@ -36,93 +39,120 @@
     <section id="banner-section">
       <div class="banner">
         <div class="banner-div">
-          <h1>Web Developer</h1>
-          <img class="logo" src="img/bg-img.jpg" alt="coffee-image"> 
+          <img class="logo" src="img/bg-img2.jpg" alt="coffee-image"> 
         </div>
      </div> <!--/.banner-->
+
     </section>
+ 
 
 <!-- // about-Section -->
-      <section id="about-section">
-        <div class="about-main row">
-          <div class="about-head col">
-            <h1>Hello I'm Igor Perun</h1>
-            <h2>A web developer that focuses on building responsive user interfaces and beautiful design!</h2>
-            <img class="me-img" src="img/me1.jpg">
-            <span id="about-divider"class="divider"></span>
-          </div> <!--/.about-head col--> 
+<section id="about-section">
+    <div class="card">
+        <div class="card-about">
+          <h2>About Me!</h2>
+          <img src="img/avatar.jpg" alt="face pic" height="300" width="300">
+        </div>
+        <div class="card-context">
+            My name is Igor Perun. I’m a self-taught web developer. I
+            build beautiful, responsive web Applications using best practices and the
+            latest W3C web standards. I specialize in front-end development, UX and UI design using modern tools
+            in the build process. My goal is to work fully as a web developer in a team of amazing people who share
+            the same passion, and work daily to fulfil it. I am ready to start working with you.
+          </div>
+      </div>
+</section>
+
+
+    <!-- //  Skills-section -->
+        <section id="skills-section">
           <div class="skills-head col">
-            <h1>Skills</h1>
-            <span class="skills-divider"></span>
-            <h2><span class="dev-img fa fa-gear"></span>Development</h2>
-            <ul>
-                <li class="dev-sq">HTML5</li>
-                <li class="dev-sq">CSS3/Sass</li>
-                <li class="dev-sq">JavaScript (ES6)</li>
-                <li class="dev-sq">REACT | REDUX</li>
-                <li class="dev-sq">Bootstrap 4</li>
-                <li class="dev-sq">JQuery</li>
-                <li class="dev-sq">AJAX/JSON/RESTful API</li>
-                <li class="dev-sq">Node.js & NPM</li>
-                <li class="dev-sq">PostgreSQL & MongoDB</li>
-            </ul>
-            <h2><span class="dev-img fa fa-wrench"></span>Tools</h2>
-            <span class="skills-divider"></span>
-            <ul>
-              <li class="dev-sq">Adobe Photoshop & Illustrator</li>
-              <li class="dev-sq">Chrome Dev Tools</li>
-              <li class="dev-sq">Git & GitHub</li>
-              <li class="dev-sq">Linux/Ubuntu/Bash</li>
-            </ul>
+            <h1 class="skills-header">Skills</h1>
+            <span class="grey-divider"></span>
+              <div class="skills-container">
+                <div class="skills-block">
+                  <h2><span class="dev-img fas fa-cogs"></span>Front-End Web Development</h2>
+                  <ul>
+                      <li class="dev-sq">HTML5 & CSS3/Sass</li>
+                      <li class="dev-sq">JavaScript (ES6) + JQuery</li>
+                      <li class="dev-sq">REACT | REDUX</li>
+                      <li class="dev-sq">Bootstrap 4</li>
+                      <li class="dev-sq">AJAX/JSON/RESTful API</li>
+                      <li class="dev-sq">Node.js & NPM</li>
+                      <li class="dev-sq">PostgreSQL & MongoDB</li>
+                  </ul>
+                </div>
+                <div class="skills-block ">
+                  <h2><span class="dev-img fas fa-mobile-alt"></span>Responsive Websites</h2>
+                  <p>I build beautiful responsive website making the web pages look great on all devices<br> (desktops,
+                    tablets, and phones). Using the power of CSS3 and media queries to<br> resize, hide, shrink,
+                    enlarge, or move contents to render awesomeness.</p>
+                </div>
+                <div class="skills-block">
+                  <h2><span class="dev-img fa fa-wrench"></span>Build Tools</h2>
+                  <span class="skills-divider"></span>
+                  <ul>
+                    <li class="dev-sq">Adobe Photoshop & Illustrator</li>
+                    <li class="dev-sq">Chrome Dev Tools</li>
+                    <li class="dev-sq">Git & GitHub</li>
+                    <li class="dev-sq">Linux/Ubuntu/Bash</li>
+                  </ul>
+                </div>                
+              </div>
           </div> <!--/.skills-head col--> 
-        </div> <!--/.about-main row--> 
-      </section>
+        </section>
+      
 
 <!-- // Portfolio -->
       <section id="portfolio-section">
         <div class="portfolio-main row">
-          <h1>Portfolio</h1>
-          <div class="project-wrap">
-            <div class="project col wow bounceInLeft" data-wow-duration=".6s" data-wow-delay=".5s">
-             <h2>Smartbrain</h2>
-             <img class="project-img" src="img/smart.png" alt="smartbrain project" height="300" width="550">
-              <p>React | Node.JS | PostgreSQL | Ubuntu/Heroku <br> HTML5 | CSS3 |JS/ES6 | API/JSON</p>
-              <a class="button project-button" href="https://iperun23.github.io/smartbrain/" target="_blank">Link to Project</a>
-            </div>
-            <div class="project col wow bounceInRight" data-wow-duration=".7s" data-wow-delay=".7s">
-              <h2>Fitness Products</h2>
-              <img class="project-img" src="img/fitness.png" alt="fitness project" height="300" width="550">
-              <p>HTML5 | CSS3 | Bootstrap4 | JQuery | JavaScript</p>
-              <a class="button project-button" href="https://iperun23.github.io/fitness-products/" target="_blank">Link to Project</a>
-            </div>
+          <h1>Recent Projects</h1>
+          <span class="grey-divider"></span>
+        </div>
+        <div class="project-wrap">
+          <div class="project-pic col">
+            <img class="project-img" src="img/smart.png" alt="smartbrain project" height="300" width="550">
           </div>
-          <div class="project-wrap pw2">
-            <div class="project col wow bounceInLeft" data-wow-duration=".6s" data-wow-delay=".5s">
-              <h2>Robofriends</h2>
-              <img class="project-img" src="img/robo.png" alt="robofriends" height="300" width="550">
-              <p>REACT | REDUX | NPM | HTML5 | CSS3 | API</p>
-              <a class="button project-button" href="https://iperun23.github.io/robofriends/" target="_blank">Link to Project</a>
+          <div class="project-text col">
+            <h2>Smartbrain</h2>
+            <span class="grey-divider"></span>
+            <p><i>Smartbrain: </i> a face recognition react application that targets and highlights a face in a picture using the Clarifai API. It gives anyone the abilty to register as a new user and login anytime. Also tracks the service usage each time. (Stored into a database)</p>
+            <p><span class="bt-span">Build Tools: </span>React, Node.JS, PostgreSQL, Ubuntu/Heroku, HTML/CSS, JS(ES6), JSON/API </p>
+          </div>
+        </div>
+        <div class="project-wrap">
+          <div class="project-text-r col">
+            <h2>FitLit-Life</h2>
+            <span class="grey-divider"></span>
+            <p><i>FitLit-Life: </i>A single page website built from scratch using the new Bootstrap 4 that showcases new food reviews, fitness goals and foods. Visually stunning visitors with two different designs, one on the desktop and the other on mobile view for a great expereince. Using the website to try out some of the new Bootstrap 4 awesome features. </p>
+            <p><span class="bt-span">Build Tools: </span>HTML5, Custom CSS3, BootStrap 4, JQuery, Javascript </p>
+          </div>
+          <div class="project-pic-r col">
+            <img class="project-img" src="img/fitness.png" alt="fitness project" height="300" width="550">
+          </div>
+        </div>
+        <div class="project-wrap">
+          <div class="project-pic col">
+            <img class="project-img" src="img/robo.png" alt="robofriends" height="300" width="550">
+          </div>
+          <div class="project-text col">
+            <h2>Robofriends</h2>
+            <span class="grey-divider"></span>
+            <p><i>Robofriends: </i>a fun robot name search using the RoboHash API that will display the full robot card when searched for a specific name. *Working with React components and state management with Redux</p>
+            <p><span class="bt-span">Build Tools: </span>React, Redux, NPM, HTML5, CSS3, API</p>
+          </div>
+          <div class="project-wrap pw-bpad">
+            <div class="project-text-r col">
+              <h2>Fit-Up</h2>
+              <span class="grey-divider"></span>
+              <p><i>Fit-Up: </i>a single page start up landing page for a fitness company using a marketing platform: MailChip for email subscriptions</p>
+              <p><span class="bt-span">Build Tools: </span>HTML5, BootStrap 4, CSS, MailChimp</p>
             </div>
-            <div class="project col wow bounceInRight" data-wow-duration=".7s" data-wow-delay=".7s">
-              <h2>Linear Gradient Color Picker</h2>
-              <img class="project-img" src="img/color.png" alt="color picker" height="300" width="550">
-              <p>HTML5 | CSS3 | JavaScript/ES6</p>
-              <a class="button project-button" href="https://iperun23.github.io/color-picker/" target="_blank">Link to Project</a>
-            </div>
-            <div class="project col wow bounceInLeft" data-wow-duration=".7s" data-wow-delay=".7s">
-              <h2>Start Up</h2>
+            <div class="project-pic-r col">
               <img class="project-img" src="img/startup.png" alt="startup" height="300" width="550">
-              <p>HTML5 | Bootstrap4 | CSS3 | MailChimp</p>
-              <a class="button project-button" href="https://iperun23.github.io/fitness-startup/" target="_blank">Link to Project</a>
-            </div>
-            <div class="project project-bm col wow bounceInRight" data-wow-duration=".6s" data-wow-delay=".5s">
-              <h2>First Portfolio</h2>
-              <img class="project-img" src="img/port1.png" alt="first portfolio" height="300" width="550">
-              <p>HTML5 | CSS3</p>
-              <a class="button project-button" href="https://iperun23.github.io/portfolio1/" target="_blank">Link to Project</a>
             </div>
           </div>
-         </div><!--/.portfolio-main row--> 
+        </div>
       </section>
 
 <!-- // Contact-form -->
@@ -194,6 +224,6 @@
     <!-- WOW JS -->
     <script src="js/wow.min.js" type="text/javascript"></script>
      <!-- Custom JS -->
-    <script src="js/script.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
