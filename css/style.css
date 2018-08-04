@@ -56,10 +56,18 @@ h3 {
 
   /* ---- Navigation ---- */
 
-  .name {
+  .name-brand {
     padding:0;
     margin: 0 0 0 45px;
-
+    display: inline-block
+  }
+  #navbar-toggle {
+    position: absolute;
+    top: 17px;
+    right: 30px;
+    cursor: pointer; 
+    color:#0fbcf9;
+    font-size: 35px;
   }
   .main-header {
     background-color: #020403;
@@ -67,9 +75,12 @@ h3 {
   }
   .main-nav {
     margin-top: 5px;
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
   }
 
-  .name,
+  .name-brand,
   .main-nav a {
     text-align: center;
     display: block;
@@ -79,16 +90,19 @@ h3 {
     font-size: .95em;
     color: #0fbcf9;
     text-transform: uppercase;
-    padding: .5375rem 3.75rem;
+    padding: 8px 25px;
     font-weight: 700;
   }
 
   .main-nav a:hover {
-    background-color: #0fbcf9;;
     color:#fff;
     cursor: pointer;
   }
-
+  .download a:hover {
+    color:#fff;
+    background-color: #0fbcf9;
+    cursor: pointer;
+  }
 
 
   /* ---- banner-section ---- */
@@ -115,12 +129,13 @@ h3 {
 .logo {
   border-bottom: 2px solid #000;
   box-shadow: 2px 2px 6px rgba(0,0,0,.6);
+  height: 50em;
 }
  /* ---- front of banner-section ---- */
 .banner-wrapper {
   text-align: center;
   position: absolute;
-  top: 30%;
+  top: 40%;
   width: 100%;
 }
 .banner-hello {
@@ -162,6 +177,7 @@ h3 {
  height: 20px;
  padding: 0 10px;
 }
+
   /* ---- centering-section ---- */
   .col {
     padding-right: 1em;
@@ -260,26 +276,27 @@ h1 {
   padding-bottom: 75px;
 }
 .project-pic {
-  margin: 0 0 0 auto;
-  padding: 0 50px;
+  display: block;
+  margin: 0 auto;
 }
+
 .project-img {
   box-shadow: 2px 2px 6px #212529;
   border-radius: 10px;
 }
 .project-text {
   margin: 0 auto 0 0;
-  width: 35%;
   align-items: center;
   padding: 0 50px;
 }
 .project-pic-r {
-  margin: 0 auto 0 0;
-  padding: 0 50px;
+  display: block;
+  margin: 0 auto;
+  order: -1;
 }
+
 .project-text-r {
   margin: 0 0 0 auto;
-  width: 35%;
   align-items: center;
   padding: 0 50px;
 }
@@ -360,30 +377,30 @@ h1 {
   padding-bottom: 50px;
 }
 
-.contact-main-wrapper {
-  display:flex;
-}
 .contact-wrapper {
   margin: 0 auto;
+  padding-bottom: 25px;
   
 }
 .contact-git {
   background-color: #0fbcf9;
   height: 225px;
   width: 225px;
-  display: flex;
+  margin: 0 auto;
   margin-bottom: 10px;
   box-shadow: 2px 2px 6px #212529;
   border-radius: 10px;
+  display: flex;
 }
 
 .contact-email {
   border: 1px solid black;
   height: 225px;
   width: 225px;
-  display: flex;
+  margin: 0 auto;
   box-shadow: 2px 2px 6px #212529;
   border-radius: 10px;
+  display: flex;
 }
 
 .contact-git a,
@@ -526,64 +543,11 @@ h1 {
   padding: 15px;
 }
 
-/* 
-.main-footer{
-  background: #f4f4f4;
-  padding: 10px;
-  padding-top: 25px;
-}
-
-.footer-head p {
-  margin:0;
-  padding: 10px;
-  border-top: 1.5px outset #2d2a2d;
-}
-.social-flex {
-  display:flex;
-  margin: 15px;
-}
-
-.social-flex li {
-  -moz-box-shadow:    inset 0 0 10px #5e5b5e;
-  -webkit-box-shadow: inset 0 0 10px #5e5b5e;
-  box-shadow:         inset 0 0 10px #5e5b5e; 
-  border-radius: .75em;
-  flex-grow:1;
-  background: #5e5b5e;
-  border: 1px solid #2d2a2d;
-  display:flex;
-  margin-right: 2.5px;
-  margin-left: 2.5px;
-}
-.social-flex a {
-  display:inline-block;
-  width: 100%;
-  height: 100%;
-  color: white;
-  font-size: 1em;
-}
-.social-flex li:hover {
-  color:#fff;
-  background: #000;
-  border-radius: .75em;
-}
-.social-flex li:active {
-  background: #5e5b5e;
-}
-
-.social-flex p {
-  display:flex;
-  justify-content: center;
-  padding:10px 10px 1px 10px;
-  margin:0;
-} */
-
-
-
 /* ---- MEDIA QUERIES ---- */
 
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
+   /* ---- Navigation ---- */
   .main-header,
   .main-nav,
   .name {
@@ -593,7 +557,19 @@ h1 {
     margin-left :auto;
     margin-right: 70px;
     padding-top: 10px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+  #navbar-toggle {
+    display: none;
+ }
   .btn-default {
     border: 1px solid #0fbcf9;
     padding: .5375rem 3.75rem;
@@ -601,7 +577,17 @@ h1 {
   }
   .main-nav li {
     padding: 10px;
-  
+  }
+
+  /** Project section **/
+  .project-pic,
+  .project-pic-r {
+    margin: 0 0 0 auto;
+    padding: 0 50px;
+  }
+  .project-text,
+  .project-text-r {
+    width: 35%;
   }
   .project-wrap {
     display:flex;
@@ -617,21 +603,22 @@ h1 {
   .project-bm {
     margin-bottom: 15px;
   }
-    .form-info {
+
+  /** Form section **/
+  
+  .contact-main-wrapper {
+    display:flex;
+    }
+  .form-info {
       width:50%;
     }
-
-}
-
+ 
+  }
 @media screen and (min-width: 1000px) {
   .logo {
     max-height: 1000px;
     width: 100%;
   }
-  .about-head {
-    display: flex;
-    flex-direction: column;
-  }
-  
+ 
 }
 
