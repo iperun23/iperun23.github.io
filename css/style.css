@@ -292,7 +292,7 @@ h1 {
 .project-pic-r {
   display: block;
   margin: 0 auto;
-  order: -1;
+
 }
 
 .project-text-r {
@@ -584,6 +584,9 @@ h1 {
   .project-pic-r {
     margin: 0 0 0 auto;
     padding: 0 50px;
+  }
+  .project-pic {
+    order: -1;
   }
   .project-text,
   .project-text-r {
