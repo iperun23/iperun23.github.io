@@ -242,6 +242,8 @@ h1 {
 }
 .skills-block {
   flex-direction: row;
+  color: #808e9b;
+  padding-bottom: 15px;
 }
 .skills-header {
   color: #808e9b;
@@ -252,9 +254,7 @@ h1 {
 .skills-head h2 {
   color: #0fbcf9;
 }
-.skills-block {
-  color: #808e9b;
-}
+
 
 .dev-img {
   padding-right: 10px;
@@ -292,7 +292,7 @@ h1 {
 .project-pic-r {
   display: block;
   margin: 0 auto;
-
+  order: -2;
 }
 
 .project-text-r {
@@ -540,7 +540,7 @@ h1 {
 /* ---- footer-section ---- */
 .main-footer {
   background-color: #0fbcf9;
-  padding: 15px;
+  padding: 23px;
 }
 
 /* ---- MEDIA QUERIES ---- */
@@ -582,11 +582,10 @@ h1 {
   /** Project section **/
   .project-pic,
   .project-pic-r {
-    margin: 0 0 0 auto;
     padding: 0 50px;
   }
-  .project-pic {
-    order: -1;
+  .project-text-r {
+    order: -2;
   }
   .project-text,
   .project-text-r {
@@ -625,3 +624,35 @@ h1 {
  
 }
 
+@media screen and (max-width: 700px) {
+  .card {
+    display: block;
+  }
+  .card-about {
+    margin: 0 auto;
+  }
+  .card-context {
+    width: 100%;
+  }
+  .logo {
+    max-height: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    max-height: 700px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    max-height: 500px;
+  }
+  .banner-wrapper {
+    top: 20%;
+  }
+  .banner-hello {
+    font-size: 2em;
+  }
+}
