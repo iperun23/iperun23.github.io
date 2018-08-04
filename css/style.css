@@ -655,4 +655,7 @@ h1 {
   .banner-hello {
     font-size: 2em;
   }
+  .demo-button {
+    width: 75%;
+  }
 }
