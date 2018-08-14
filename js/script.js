@@ -11,7 +11,7 @@ navbarToggle.addEventListener('click',function(){
     } else{
         mainNav.style.display="flex";
         this.classList.add('active');
-        bannerHello.style.paddingTop = "125px";
+        bannerHello.style.paddingTop = "150px";
     }
      
 });
