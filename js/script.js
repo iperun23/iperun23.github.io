@@ -1,22 +1,25 @@
 let mainNav=document.querySelector('.main-nav');
 let navbarToggle=document.getElementById('navbar-toggle');
+let bannerHello = document.querySelector('.banner-hello');
 
 navbarToggle.addEventListener('click',function(){
 
     if(this.classList.contains('active')){
         mainNav.style.display="none";
         this.classList.remove('active');
-    }
-    else{
+        bannerHello.style.paddingTop = "0px";
+    } else{
         mainNav.style.display="flex";
         this.classList.add('active');
-
+        bannerHello.style.paddingTop = "125px";
     }
+     
 });
 
 var amountScrolled = 200;
 
 new WOW().init();
+
 
 $(window).scroll(function() {
     if ( $(window).scrollTop() > amountScrolled ) {
