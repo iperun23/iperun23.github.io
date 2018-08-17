@@ -2,6 +2,12 @@ let mainNav=document.querySelector('.main-nav');
 let navbarToggle=document.getElementById('navbar-toggle');
 let bannerHello = document.querySelector('.banner-hello');
 
+
+window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"
+})
+
 navbarToggle.addEventListener('click',function(){
 
     if(this.classList.contains('active')){
